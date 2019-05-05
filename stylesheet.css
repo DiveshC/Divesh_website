@@ -5,24 +5,25 @@ body{
 .banner {
 	text-align: center;
 	font-family:'Raleway', sans-serif;
-	text-shadow: 4px 4px 4px #4d4d4d;
+	text-shadow: 0px 0px 20px #4d4d4d;
 	width:100%;
 	height:400px;
-	background-image: url(imgs/the_six.jpg);
+	background-image: url(imgs/sunset.jpeg);
 	background-size: cover;
-	box-shadow: inset 0 200px 350px -150px #66ffff;
+	box-shadow: inset 0 200px 350px -150px #600080;
 }
 #profile {
 	position:relative;
 }
 #profile img{
-	height:150px;
-	padding-bottom:5px;
+	height:200px;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0px 0px 25px -5px #000;
 }
 .banner h1{
 	color: #ffffff;
 	font-size:60px;
-	margin-top:100px;
+	margin-top:70px;
 }
 #myCarousel img{
 	width:100%;
@@ -63,11 +64,11 @@ body{
 #projects{
 	position:relative;
 	font-family:'Raleway', sans-serif;
-	background-image: url(imgs/car4.png);
+	background-image: url(imgs/concept3.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:cover;
-	height:450px;
+	height:550px;
 	width:100%;
 	text-align: left
 }
@@ -79,35 +80,55 @@ body{
 .project {
 	margin-left:auto;
 	margin-right:auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width:350px;
+	margin-top: 1.25em;
+	width:95%;
 	background-color:white;
-	border-radius:10px;
-	box-shadow: 0px 0px 15px -5px #4d4d4d;
+	border-radius:1.25em;
+	box-shadow: 0px 0px 30px -5px #afafaf;
+	transition: box-shadow,top, 01s;
+}
+.project:hover{
+	box-shadow: 0px 0px 40px -5px #4d4d4d;
+	top: -2em;
 }
 .project img{
-	border-radius: 10px 10px 0 0;
-	width:350px;
+	border-radius: 1.25em 1.25em 0 0;
+	width:100%;
 }
 .project h3{
 	text-align: center;
 	font-weight: bold;
-	padding-left: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-bottom: 5px;
 	color:#4d4d4d;
 	font-family: 'Raleway', sans-serif;
 }
-.project p{
-	padding-left: 15px;
-	padding-right: 5px;
+.card h1{
+	text-align: center;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-bottom: 20px;
 	color:#4d4d4d;
 	font-family: 'Raleway', sans-serif;
 }
-.project li{
+
+.project p{
+	padding-left: 40px;
+	padding-right: 40px;
 	color:#4d4d4d;
 	font-family: 'Raleway', sans-serif;
+	padding-bottom: 30px;
+}
+.project li{
+	color:#4d4d4d;
+	padding-left: 20px;
+	padding-right: 40px;
+	font-family: 'Raleway', sans-serif;
 	display: block;
+}
+.project ul{
+	padding-bottom: 30px;
 }
 #skills{
 	position:relative;
@@ -124,4 +145,10 @@ body{
 	font-weight: bold;
 	margin-top:0px;
 	padding:30px;
+}
+.carousel-caption h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+
 }
