@@ -4,3 +4,4 @@ driver.get('file:///C:/Users/drchu/Divesh_Website/Divesh_website/index.html');
 
 //test cases 
 driver.findElement(webdriver.By.name('techclub')).click();
+console.log('git test');
